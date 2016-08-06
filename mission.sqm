@@ -8,22 +8,22 @@ class EditorData
 	toggles=1537;
 	class ItemIDProvider
 	{
-		nextID=1087;
+		nextID=1105;
 	};
 	class MarkerIDProvider
 	{
-		nextID=2;
+		nextID=3;
 	};
 	class LayerIndexProvider
 	{
-		nextID=85;
+		nextID=87;
 	};
 	class Camera
 	{
-		pos[]={3051.1399,67.052368,3248.5601};
-		dir[]={-1.6929349e-007,-0.24999999,0.96824586};
-		up[]={-4.3711385e-008,0.9682458,0.24999999};
-		aside[]={1,0,1.7484555e-007};
+		pos[]={8656.8721,414.07935,9188.7422};
+		dir[]={-0.51015508,-0.85030204,-0.12948911};
+		up[]={-0.824157,0.52630681,-0.20919046};
+		aside[]={-0.2460261,-2.507586e-007,0.9692812};
 	};
 };
 binarizationWanted=0;
@@ -87,12 +87,12 @@ addons[]=
 	"A3_Soft_F_Gamma_Truck_02",
 	"A3_Soft_F_Beta_Truck_02",
 	"A3_Modules_F_Multiplayer",
-	"A3_Ui_F",
 	"RH_de_cfg",
 	"ace_attach",
 	"ace_explosives",
 	"A3_Modules_F_Curator_Curator",
-	"A3_Characters_F_Exp_Civil"
+	"A3_Characters_F_Exp_Civil",
+	"A3_Ui_F"
 };
 class AddonsMetaData
 {
@@ -359,42 +359,42 @@ class AddonsMetaData
 		};
 		class Item40
 		{
-			className="A3_Ui_F";
-			name="Arma 3 - User Interface";
-			author="Bohemia Interactive";
-			url="http://www.arma3.com";
-		};
-		class Item41
-		{
 			className="RH_de_cfg";
 			name="RH_de_cfg";
 			author="RobertHammer";
 		};
-		class Item42
+		class Item41
 		{
 			className="ace_attach";
 			name="ACE3 - Attach";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item43
+		class Item42
 		{
 			className="ace_explosives";
 			name="ACE3 - Explosives";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item44
+		class Item43
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item45
+		class Item44
 		{
 			className="A3_Characters_F_Exp";
 			name="Arma 3 Apex - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item45
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
@@ -879,7 +879,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=79;
+		items=20;
 		class Item0
 		{
 			dataType="Layer";
@@ -39785,15 +39785,6 @@ class Mission
 		};
 		class Item13
 		{
-			dataType="Marker";
-			position[]={5658.0132,6.1541616e+031,11038.766};
-			name="respawn_west";
-			type="Empty";
-			id=991;
-			atlOffset=6.1541616e+031;
-		};
-		class Item14
-		{
 			dataType="Group";
 			side="West";
 			class Entities
@@ -41271,7 +41262,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item15
+		class Item14
 		{
 			dataType="Group";
 			side="West";
@@ -42749,7 +42740,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item16
+		class Item15
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -42858,7 +42849,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item17
+		class Item16
 		{
 			dataType="Group";
 			side="Civilian";
@@ -42951,7 +42942,7 @@ class Mission
 			};
 			id=1023;
 		};
-		class Item18
+		class Item17
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -43060,605 +43051,860 @@ class Mission
 				nAttributes=5;
 			};
 		};
+		class Item18
+		{
+			dataType="Layer";
+			name="City Markers";
+			class Entities
+			{
+				items=61;
+				class Item0
+				{
+					dataType="Marker";
+					position[]={14285.43,-1.5030175e-021,11618.976};
+					name="ba";
+					text="ba";
+					type="Empty";
+					id=1026;
+					atlOffset=-5.7192869;
+				};
+				class Item1
+				{
+					dataType="Marker";
+					position[]={2569.74,-2.0892939e-029,7354.418};
+					name="balavu";
+					text="balavu";
+					type="Empty";
+					id=1027;
+					atlOffset=-10.54914;
+				};
+				class Item2
+				{
+					dataType="Marker";
+					position[]={3070.51,-2.8765963e-022,11136.073};
+					name="belfort";
+					text="belfort";
+					type="Empty";
+					id=1028;
+					atlOffset=-9.5343599;
+				};
+				class Item3
+				{
+					dataType="Marker";
+					position[]={10334.773,-1.248653e-021,2669.583};
+					name="blerick";
+					text="blerick";
+					type="Empty";
+					id=1029;
+					atlOffset=-2.22;
+				};
+				class Item4
+				{
+					dataType="Marker";
+					position[]={13325.896,-3.3130517e-019,12152.439};
+					name="bluepearlport";
+					text="bluepearlport";
+					type="Empty";
+					id=1030;
+					atlOffset=-2.55;
+				};
+				class Item5
+				{
+					dataType="Marker";
+					position[]={13281.203,-6.1877308e-019,2939.925};
+					name="buabua";
+					text="buabua";
+					type="Empty";
+					id=1031;
+					atlOffset=-48.435184;
+				};
+				class Item6
+				{
+					dataType="Marker";
+					position[]={8260.5332,-2.6351085e-015,11120.682};
+					name="buawa";
+					text="buawa";
+					type="Empty";
+					id=1032;
+					atlOffset=-128.12772;
+				};
+				class Item7
+				{
+					dataType="Marker";
+					position[]={2152.959,-5.62452e-019,4561.0439};
+					name="cerebu";
+					text="cerebu";
+					type="Empty";
+					id=1033;
+					atlOffset=-11.201259;
+				};
+				class Item8
+				{
+					dataType="Marker";
+					position[]={12807.306,-3.0679502e-027,4756.04};
+					name="doodstil";
+					text="doodstil";
+					type="Empty";
+					id=1034;
+					atlOffset=-3.8800001;
+				};
+				class Item9
+				{
+					dataType="Marker";
+					position[]={5658.0132,6.1541616e+031,11038.766};
+					name="respawn_west";
+					type="Empty";
+					id=991;
+					atlOffset=6.1541616e+031;
+				};
+				class Item10
+				{
+					dataType="Marker";
+					position[]={8069.585,-1.1960528e-031,11930.91};
+					name="galili";
+					text="galili";
+					type="Empty";
+					id=1035;
+					atlOffset=-216.67726;
+				};
+				class Item11
+				{
+					dataType="Marker";
+					position[]={5715.9082,-3.6950881e-015,10244.857};
+					name="georgetown";
+					text="georgetown";
+					type="Empty";
+					id=1036;
+					atlOffset=-4.3499999;
+				};
+				class Item12
+				{
+					dataType="Marker";
+					position[]={11234.85,-2.8755785e-022,5224.0039};
+					name="harcourt";
+					text="harcourt";
+					type="Empty";
+					id=1037;
+					atlOffset=-1.9400001;
+				};
+				class Item13
+				{
+					dataType="Marker";
+					position[]={10532.926,-5.6572585e-037,10542.189};
+					name="imone";
+					text="imone";
+					type="Empty";
+					id=1038;
+					atlOffset=-157.29091;
+				};
+				class Item14
+				{
+					dataType="Marker";
+					position[]={12279.895,-1.6553821e-026,13968.396};
+					name="ipota";
+					text="ipota";
+					type="Empty";
+					id=1039;
+					atlOffset=-10.64;
+				};
+				class Item15
+				{
+					dataType="Marker";
+					position[]={5536.0791,-2.4684159e-027,4108.3779};
+					name="katkoula";
+					text="katkoula";
+					type="Empty";
+					id=1040;
+					atlOffset=-3.4296436;
+				};
+				class Item16
+				{
+					dataType="Marker";
+					position[]={10895.045,-2.4684159e-027,6294.8232};
+					name="kotomo";
+					text="kotomo";
+					type="Empty";
+					id=1041;
+					atlOffset=-5.55334;
+				};
+				class Item17
+				{
+					dataType="Marker";
+					position[]={1518.2271,-1.4856752e-020,3008.458};
+					name="koumac";
+					text="koumac";
+					type="Empty";
+					id=1042;
+					atlOffset=-5.6695666;
+				};
+				class Item18
+				{
+					dataType="Marker";
+					position[]={8947.6992,-1.4863266e-020,4712.2622};
+					name="lafoa";
+					text="lafoa";
+					type="Empty";
+					id=1044;
+					atlOffset=-8.4314814;
+				};
+				class Item19
+				{
+					dataType="Marker";
+					position[]={1714.011,-1.486978e-020,6153.4492};
+					name="laikoro";
+					text="laikoro";
+					type="Empty";
+					id=1046;
+					atlOffset=-2.9127758;
+				};
+				class Item20
+				{
+					dataType="Marker";
+					position[]={3617.2271,-1.9549132e-025,2145.241};
+					name="lailai";
+					text="lailai";
+					type="Empty";
+					id=1047;
+					atlOffset=-36.823338;
+				};
+				class Item21
+				{
+					dataType="Marker";
+					position[]={9207.3965,-1.9549132e-025,8721.791};
+					name="lakatoro";
+					text="lakatoro";
+					type="Empty";
+					id=1048;
+					atlOffset=-219.68887;
+				};
+				class Item22
+				{
+					dataType="Marker";
+					position[]={7927.1631,-5.5897921e-022,7710.104};
+					name="lami";
+					text="lami";
+					type="Empty";
+					id=1049;
+					atlOffset=-7.5033646;
+				};
+				class Item23
+				{
+					dataType="Marker";
+					position[]={9537.7646,-1.4863266e-020,13523.61};
+					name="larochelle";
+					text="larochelle";
+					type="Empty";
+					id=1045;
+					atlOffset=-3.6614063;
+				};
+				class Item24
+				{
+					dataType="Marker";
+					position[]={2324.947,-1.248653e-021,8174.6611};
+					name="leqa";
+					text="leqa";
+					type="Empty";
+					id=1050;
+					atlOffset=-5.1511803;
+				};
+				class Item25
+				{
+					dataType="Marker";
+					position[]={7260.6021,-2.5843908e-027,7972.6499};
+					name="lifou";
+					text="lifou";
+					type="Empty";
+					id=1051;
+					atlOffset=-2.6795998;
+				};
+				class Item26
+				{
+					dataType="Marker";
+					position[]={11590.084,-1.2571785e-031,2710.5281};
+					name="lijnhaven";
+					text="lijnhaven";
+					type="Empty";
+					id=1052;
+					atlOffset=-3.2973375;
+				};
+				class Item27
+				{
+					dataType="Marker";
+					position[]={6040.2852,-2.5751633e-037,8478.4619};
+					name="lobaka";
+					text="lobaka";
+					type="Empty";
+					id=1053;
+					atlOffset=-32.465233;
+				};
+				class Item28
+				{
+					dataType="Marker";
+					position[]={10164.477,-3.6588278e-027,4996.0371};
+					name="losi";
+					text="losi";
+					type="Empty";
+					id=1043;
+					atlOffset=-4.4782691;
+				};
+				class Item29
+				{
+					dataType="Marker";
+					position[]={14009.132,-2.6238463e-015,8342.7686};
+					name="luganville";
+					text="luganville";
+					type="Empty";
+					id=1054;
+					atlOffset=-4.5918431;
+				};
+				class Item30
+				{
+					dataType="Marker";
+					position[]={9347.6641,1.9457183e+038,4009.6709};
+					name="moddergat";
+					text="moddergat";
+					type="Empty";
+					id=1055;
+					atlOffset=1.9457183e+038;
+				};
+				class Item31
+				{
+					dataType="Marker";
+					position[]={10391.207,-3.0885452e-022,13281.978};
+					name="momea";
+					text="momea";
+					type="Empty";
+					id=1056;
+					atlOffset=-15.592481;
+				};
+				class Item32
+				{
+					dataType="Marker";
+					position[]={1596.551,-2.938051e-014,8489.8467};
+					name="muaceba";
+					text="muaceba";
+					type="Empty";
+					id=1057;
+					atlOffset=-4.185216;
+				};
+				class Item33
+				{
+					dataType="Marker";
+					position[]={2777.3279,-1.2254157e-031,5710.2212};
+					name="namuvaka";
+					text="namuvaka";
+					type="Empty";
+					id=1058;
+					atlOffset=-4.953465;
+				};
+				class Item34
+				{
+					dataType="Marker";
+					position[]={14367.125,-1.9041491e-028,8892.5244};
+					name="nandai";
+					text="nandai";
+					type="Empty";
+					id=1059;
+					atlOffset=-8.8389778;
+				};
+				class Item35
+				{
+					dataType="Marker";
+					position[]={1928.89,-2.7556373e-022,10704.424};
+					name="nani";
+					text="nani";
+					type="Empty";
+					id=1060;
+					atlOffset=-3.2261755;
+				};
+				class Item36
+				{
+					dataType="Marker";
+					position[]={11369.464,-1.9549132e-025,12340.67};
+					name="nasua";
+					text="nasua";
+					type="Empty";
+					id=1061;
+					atlOffset=-112.58262;
+				};
+				class Item37
+				{
+					dataType="Marker";
+					position[]={6271.3252,-6.3012841e-029,12774.814};
+					name="nicolet";
+					text="nicolet";
+					type="Empty";
+					id=1062;
+					atlOffset=-1.5861987;
+				};
+				class Item38
+				{
+					dataType="Marker";
+					position[]={12882.554,-5.5836852e-022,7386.1299};
+					name="oumere";
+					text="oumere";
+					type="Empty";
+					id=1064;
+					atlOffset=-3.419641;
+				};
+				class Item39
+				{
+					dataType="Marker";
+					position[]={12406.949,-6.7923393e-020,12692.486};
+					name="ovau";
+					text="ovau";
+					type="Empty";
+					id=1065;
+					atlOffset=-4.5959377;
+				};
+				class Item40
+				{
+					dataType="Marker";
+					position[]={10942.771,-6.7871281e-020,13210.173};
+					name="penelo";
+					text="penelo";
+					type="Empty";
+					id=1066;
+					atlOffset=-16.192387;
+				};
+				class Item41
+				{
+					dataType="Marker";
+					position[]={6852.5151,-2.5751633e-037,13354.25};
+					name="petitnicolet";
+					text="petitnicolet";
+					type="Empty";
+					id=1067;
+					atlOffset=-4.4415526;
+				};
+				class Item42
+				{
+					dataType="Marker";
+					position[]={12667.194,-1.2682601e-031,3264.0249};
+					name="portboise";
+					text="portboise";
+					type="Empty";
+					id=1068;
+					atlOffset=-4.9617682;
+				};
+				class Item43
+				{
+					dataType="Marker";
+					position[]={5718.27,-5.5877565e-022,12286.648};
+					name="quaque";
+					text="quaque";
+					type="Empty";
+					id=1063;
+					atlOffset=-25.600351;
+				};
+				class Item44
+				{
+					dataType="Marker";
+					position[]={3412.9861,-1.1493483e-019,6703.4229};
+					name="rautake";
+					text="rautake";
+					type="Empty";
+					id=1069;
+					atlOffset=-8.579833;
+				};
+				class Item45
+				{
+					dataType="Marker";
+					position[]={5081.854,-1.2673122e-031,8665.0234};
+					name="regina";
+					text="regina";
+					type="Empty";
+					id=1070;
+					atlOffset=-2.7144873;
+				};
+				class Item46
+				{
+					dataType="Marker";
+					position[]={12980.719,-2.101138e-011,2120.1741};
+					name="rereki";
+					text="rereki";
+					type="Empty";
+					id=1071;
+					atlOffset=-3.8550196;
+				};
+				class Item47
+				{
+					dataType="Marker";
+					position[]={5813.73,-3.451372e-025,11184.623};
+					name="saintjulien";
+					text="saintjulien";
+					type="Empty";
+					id=1072;
+					atlOffset=-2.6880469;
+				};
+				class Item48
+				{
+					dataType="Marker";
+					position[]={7909.313,-2.4775807e-029,13511.903};
+					name="saintpaul";
+					text="saintpaul";
+					type="Empty";
+					id=1073;
+					atlOffset=-2.9186182;
+				};
+				class Item49
+				{
+					dataType="Marker";
+					position[]={12385.84,-9.1655934e-022,4504.2212};
+					name="saioko";
+					text="saioko";
+					type="Empty";
+					id=1074;
+					atlOffset=-37.373215;
+				};
+				class Item50
+				{
+					dataType="Marker";
+					position[]={7106.3999,-9.1655934e-022,4247.647};
+					name="savaka";
+					text="savaka";
+					type="Empty";
+					id=1075;
+					atlOffset=-4.1108928;
+				};
+				class Item51
+				{
+					dataType="Marker";
+					position[]={8414.0771,-5.4582573e-014,13676.776};
+					name="savu";
+					text="savu";
+					type="Empty";
+					id=1076;
+					atlOffset=-8.4099617;
+				};
+				class Item52
+				{
+					dataType="Marker";
+					position[]={2652.563,-1.2567046e-031,9278.877};
+					name="sosovu";
+					text="sosovu";
+					type="Empty";
+					id=1077;
+					atlOffset=-6.6603422;
+				};
+				class Item53
+				{
+					dataType="Marker";
+					position[]={12320.053,-1.2562306e-031,1817.7841};
+					name="taga";
+					text="taga";
+					type="Empty";
+					id=1078;
+					atlOffset=-107.60404;
+				};
+				class Item54
+				{
+					dataType="Marker";
+					position[]={8901.7256,-3.1284168e-029,10194.32};
+					name="tanouka";
+					text="tanouka";
+					type="Empty";
+					id=1079;
+					atlOffset=-19.512424;
+				};
+				class Item55
+				{
+					dataType="Marker";
+					position[]={950.508,-1.4863266e-020,7681.6431};
+					name="tavu";
+					text="tavu";
+					type="Empty";
+					id=1081;
+					atlOffset=-2.3199999;
+				};
+				class Item56
+				{
+					dataType="Marker";
+					position[]={8826.5137,-1.486978e-020,3676.239};
+					name="tobakoro";
+					text="tobakoro";
+					type="Empty";
+					id=1082;
+					atlOffset=-8.5609322;
+				};
+				class Item57
+				{
+					dataType="Marker";
+					position[]={1801.111,-1.486978e-020,11985.1};
+					name="tuvanaka";
+					text="tuvanaka";
+					type="Empty";
+					id=1083;
+					atlOffset=-6.1839228;
+				};
+				class Item58
+				{
+					dataType="Marker";
+					position[]={11022.038,-2.4490488e-005,9737.8086};
+					name="vagalala";
+					text="vagalala";
+					type="Empty";
+					id=1084;
+					atlOffset=-109.8119;
+				};
+				class Item59
+				{
+					dataType="Marker";
+					position[]={14072.1,-6.6440099e-030,9934.1465};
+					name="vatukoulo";
+					text="vatukoulo";
+					type="Empty";
+					id=1085;
+					atlOffset=-98.755562;
+				};
+				class Item60
+				{
+					dataType="Marker";
+					position[]={2977.5601,-3.3296473e-016,3435.9529};
+					name="yanukka";
+					text="yanukka";
+					type="Empty";
+					id=1086;
+					atlOffset=-16.613377;
+				};
+			};
+			id=1087;
+			atlOffset=9.060457e+028;
+		};
 		class Item19
 		{
-			dataType="Marker";
-			position[]={14285.43,-1.5030175e-021,11618.976};
-			name="ba";
-			text="ba";
-			type="Empty";
-			id=1026;
-			atlOffset=-5.7192869;
-		};
-		class Item20
-		{
-			dataType="Marker";
-			position[]={2569.74,-2.0892939e-029,7354.418};
-			name="balavu";
-			text="balavu";
-			type="Empty";
-			id=1027;
-			atlOffset=-10.54914;
-		};
-		class Item21
-		{
-			dataType="Marker";
-			position[]={3070.51,-2.8765963e-022,11136.073};
-			name="belfort";
-			text="belfort";
-			type="Empty";
-			id=1028;
-			atlOffset=-9.5343599;
-		};
-		class Item22
-		{
-			dataType="Marker";
-			position[]={10334.773,-1.248653e-021,2669.583};
-			name="blerick";
-			text="blerick";
-			type="Empty";
-			id=1029;
-			atlOffset=-2.22;
-		};
-		class Item23
-		{
-			dataType="Marker";
-			position[]={13325.896,-3.3130517e-019,12152.439};
-			name="bluepearlport";
-			text="bluepearlport";
-			type="Empty";
-			id=1030;
-			atlOffset=-2.55;
-		};
-		class Item24
-		{
-			dataType="Marker";
-			position[]={13281.203,-6.1877308e-019,2939.925};
-			name="buabua";
-			text="buabua";
-			type="Empty";
-			id=1031;
-			atlOffset=-48.435184;
-		};
-		class Item25
-		{
-			dataType="Marker";
-			position[]={8260.5332,-2.6351085e-015,11120.682};
-			name="buawa";
-			text="buawa";
-			type="Empty";
-			id=1032;
-			atlOffset=-128.12772;
-		};
-		class Item26
-		{
-			dataType="Marker";
-			position[]={2152.959,-5.62452e-019,4561.0439};
-			name="cerebu";
-			text="cerebu";
-			type="Empty";
-			id=1033;
-			atlOffset=-11.201259;
-		};
-		class Item27
-		{
-			dataType="Marker";
-			position[]={12807.306,-3.0679502e-027,4756.04};
-			name="doodstil";
-			text="doodstil";
-			type="Empty";
-			id=1034;
-			atlOffset=-3.8800001;
-		};
-		class Item28
-		{
-			dataType="Marker";
-			position[]={8069.585,-1.1960528e-031,11930.91};
-			name="galili";
-			text="galili";
-			type="Empty";
-			id=1035;
-			atlOffset=-216.67726;
-		};
-		class Item29
-		{
-			dataType="Marker";
-			position[]={5715.9082,-3.6950881e-015,10244.857};
-			name="georgetown";
-			text="georgetown";
-			type="Empty";
-			id=1036;
-			atlOffset=-4.3499999;
-		};
-		class Item30
-		{
-			dataType="Marker";
-			position[]={11234.85,-2.8755785e-022,5224.0039};
-			name="harcourt";
-			text="harcourt";
-			type="Empty";
-			id=1037;
-			atlOffset=-1.9400001;
-		};
-		class Item31
-		{
-			dataType="Marker";
-			position[]={10532.926,-5.6572585e-037,10542.189};
-			name="imone";
-			text="imone";
-			type="Empty";
-			id=1038;
-			atlOffset=-157.29091;
-		};
-		class Item32
-		{
-			dataType="Marker";
-			position[]={12279.895,-1.6553821e-026,13968.396};
-			name="ipota";
-			text="ipota";
-			type="Empty";
-			id=1039;
-			atlOffset=-10.64;
-		};
-		class Item33
-		{
-			dataType="Marker";
-			position[]={5536.0791,-2.4684159e-027,4108.3779};
-			name="katkoula";
-			text="katkoula";
-			type="Empty";
-			id=1040;
-			atlOffset=-3.4296436;
-		};
-		class Item34
-		{
-			dataType="Marker";
-			position[]={10895.045,-2.4684159e-027,6294.8232};
-			name="kotomo";
-			text="kotomo";
-			type="Empty";
-			id=1041;
-			atlOffset=-5.55334;
-		};
-		class Item35
-		{
-			dataType="Marker";
-			position[]={1518.2271,-1.4856752e-020,3008.458};
-			name="koumac";
-			text="koumac";
-			type="Empty";
-			id=1042;
-			atlOffset=-5.6695666;
-		};
-		class Item36
-		{
-			dataType="Marker";
-			position[]={10164.477,-3.6588278e-027,4996.0371};
-			name="losi";
-			text="losi";
-			type="Empty";
-			id=1043;
-			atlOffset=-4.4782691;
-		};
-		class Item37
-		{
-			dataType="Marker";
-			position[]={8947.6992,-1.4863266e-020,4712.2622};
-			name="lafoa";
-			text="lafoa";
-			type="Empty";
-			id=1044;
-			atlOffset=-8.4314814;
-		};
-		class Item38
-		{
-			dataType="Marker";
-			position[]={9537.7646,-1.4863266e-020,13523.61};
-			name="larochelle";
-			text="larochelle";
-			type="Empty";
-			id=1045;
-			atlOffset=-3.6614063;
-		};
-		class Item39
-		{
-			dataType="Marker";
-			position[]={1714.011,-1.486978e-020,6153.4492};
-			name="laikoro";
-			text="laikoro";
-			type="Empty";
-			id=1046;
-			atlOffset=-2.9127758;
-		};
-		class Item40
-		{
-			dataType="Marker";
-			position[]={3617.2271,-1.9549132e-025,2145.241};
-			name="lailai";
-			text="lailai";
-			type="Empty";
-			id=1047;
-			atlOffset=-36.823338;
-		};
-		class Item41
-		{
-			dataType="Marker";
-			position[]={9207.3965,-1.9549132e-025,8721.791};
-			name="lakatoro";
-			text="lakatoro";
-			type="Empty";
-			id=1048;
-			atlOffset=-219.68887;
-		};
-		class Item42
-		{
-			dataType="Marker";
-			position[]={7927.1631,-5.5897921e-022,7710.104};
-			name="lami";
-			text="lami";
-			type="Empty";
-			id=1049;
-			atlOffset=-7.5033646;
-		};
-		class Item43
-		{
-			dataType="Marker";
-			position[]={2324.947,-1.248653e-021,8174.6611};
-			name="leqa";
-			text="leqa";
-			type="Empty";
-			id=1050;
-			atlOffset=-5.1511803;
-		};
-		class Item44
-		{
-			dataType="Marker";
-			position[]={7260.6021,-2.5843908e-027,7972.6499};
-			name="lifou";
-			text="lifou";
-			type="Empty";
-			id=1051;
-			atlOffset=-2.6795998;
-		};
-		class Item45
-		{
-			dataType="Marker";
-			position[]={11590.084,-1.2571785e-031,2710.5281};
-			name="lijnhaven";
-			text="lijnhaven";
-			type="Empty";
-			id=1052;
-			atlOffset=-3.2973375;
-		};
-		class Item46
-		{
-			dataType="Marker";
-			position[]={6040.2852,-2.5751633e-037,8478.4619};
-			name="lobaka";
-			text="lobaka";
-			type="Empty";
-			id=1053;
-			atlOffset=-32.465233;
-		};
-		class Item47
-		{
-			dataType="Marker";
-			position[]={14009.132,-2.6238463e-015,8342.7686};
-			name="luganville";
-			text="luganville";
-			type="Empty";
-			id=1054;
-			atlOffset=-4.5918431;
-		};
-		class Item48
-		{
-			dataType="Marker";
-			position[]={9347.6641,1.9457183e+038,4009.6709};
-			name="moddergat";
-			text="moddergat";
-			type="Empty";
-			id=1055;
-			atlOffset=1.9457183e+038;
-		};
-		class Item49
-		{
-			dataType="Marker";
-			position[]={10391.207,-3.0885452e-022,13281.978};
-			name="momea";
-			text="momea";
-			type="Empty";
-			id=1056;
-			atlOffset=-15.592481;
-		};
-		class Item50
-		{
-			dataType="Marker";
-			position[]={1596.551,-2.938051e-014,8489.8467};
-			name="muaceba";
-			text="muaceba";
-			type="Empty";
-			id=1057;
-			atlOffset=-4.185216;
-		};
-		class Item51
-		{
-			dataType="Marker";
-			position[]={2777.3279,-1.2254157e-031,5710.2212};
-			name="namuvaka";
-			text="namuvaka";
-			type="Empty";
-			id=1058;
-			atlOffset=-4.953465;
-		};
-		class Item52
-		{
-			dataType="Marker";
-			position[]={14367.125,-1.9041491e-028,8892.5244};
-			name="nandai";
-			text="nandai";
-			type="Empty";
-			id=1059;
-			atlOffset=-8.8389778;
-		};
-		class Item53
-		{
-			dataType="Marker";
-			position[]={1928.89,-2.7556373e-022,10704.424};
-			name="nani";
-			text="nani";
-			type="Empty";
-			id=1060;
-			atlOffset=-3.2261755;
-		};
-		class Item54
-		{
-			dataType="Marker";
-			position[]={11369.464,-1.9549132e-025,12340.67};
-			name="nasua";
-			text="nasua";
-			type="Empty";
-			id=1061;
-			atlOffset=-112.58262;
-		};
-		class Item55
-		{
-			dataType="Marker";
-			position[]={6271.3252,-6.3012841e-029,12774.814};
-			name="nicolet";
-			text="nicolet";
-			type="Empty";
-			id=1062;
-			atlOffset=-1.5861987;
-		};
-		class Item56
-		{
-			dataType="Marker";
-			position[]={5718.27,-5.5877565e-022,12286.648};
-			name="quaque";
-			text="quaque";
-			type="Empty";
-			id=1063;
-			atlOffset=-25.600351;
-		};
-		class Item57
-		{
-			dataType="Marker";
-			position[]={12882.554,-5.5836852e-022,7386.1299};
-			name="oumere";
-			text="oumere";
-			type="Empty";
-			id=1064;
-			atlOffset=-3.419641;
-		};
-		class Item58
-		{
-			dataType="Marker";
-			position[]={12406.949,-6.7923393e-020,12692.486};
-			name="ovau";
-			text="ovau";
-			type="Empty";
-			id=1065;
-			atlOffset=-4.5959377;
-		};
-		class Item59
-		{
-			dataType="Marker";
-			position[]={10942.771,-6.7871281e-020,13210.173};
-			name="penelo";
-			text="penelo";
-			type="Empty";
-			id=1066;
-			atlOffset=-16.192387;
-		};
-		class Item60
-		{
-			dataType="Marker";
-			position[]={6852.5151,-2.5751633e-037,13354.25};
-			name="petitnicolet";
-			text="petitnicolet";
-			type="Empty";
-			id=1067;
-			atlOffset=-4.4415526;
-		};
-		class Item61
-		{
-			dataType="Marker";
-			position[]={12667.194,-1.2682601e-031,3264.0249};
-			name="portboise";
-			text="portboise";
-			type="Empty";
-			id=1068;
-			atlOffset=-4.9617682;
-		};
-		class Item62
-		{
-			dataType="Marker";
-			position[]={3412.9861,-1.1493483e-019,6703.4229};
-			name="rautake";
-			text="rautake";
-			type="Empty";
-			id=1069;
-			atlOffset=-8.579833;
-		};
-		class Item63
-		{
-			dataType="Marker";
-			position[]={5081.854,-1.2673122e-031,8665.0234};
-			name="regina";
-			text="regina";
-			type="Empty";
-			id=1070;
-			atlOffset=-2.7144873;
-		};
-		class Item64
-		{
-			dataType="Marker";
-			position[]={12980.719,-2.101138e-011,2120.1741};
-			name="rereki";
-			text="rereki";
-			type="Empty";
-			id=1071;
-			atlOffset=-3.8550196;
-		};
-		class Item65
-		{
-			dataType="Marker";
-			position[]={5813.73,-3.451372e-025,11184.623};
-			name="saintjulien";
-			text="saintjulien";
-			type="Empty";
-			id=1072;
-			atlOffset=-2.6880469;
-		};
-		class Item66
-		{
-			dataType="Marker";
-			position[]={7909.313,-2.4775807e-029,13511.903};
-			name="saintpaul";
-			text="saintpaul";
-			type="Empty";
-			id=1073;
-			atlOffset=-2.9186182;
-		};
-		class Item67
-		{
-			dataType="Marker";
-			position[]={12385.84,-9.1655934e-022,4504.2212};
-			name="saioko";
-			text="saioko";
-			type="Empty";
-			id=1074;
-			atlOffset=-37.373215;
-		};
-		class Item68
-		{
-			dataType="Marker";
-			position[]={7106.3999,-9.1655934e-022,4247.647};
-			name="savaka";
-			text="savaka";
-			type="Empty";
-			id=1075;
-			atlOffset=-4.1108928;
-		};
-		class Item69
-		{
-			dataType="Marker";
-			position[]={8414.0771,-5.4582573e-014,13676.776};
-			name="savu";
-			text="savu";
-			type="Empty";
-			id=1076;
-			atlOffset=-8.4099617;
-		};
-		class Item70
-		{
-			dataType="Marker";
-			position[]={2652.563,-1.2567046e-031,9278.877};
-			name="sosovu";
-			text="sosovu";
-			type="Empty";
-			id=1077;
-			atlOffset=-6.6603422;
-		};
-		class Item71
-		{
-			dataType="Marker";
-			position[]={12320.053,-1.2562306e-031,1817.7841};
-			name="taga";
-			text="taga";
-			type="Empty";
-			id=1078;
-			atlOffset=-107.60404;
-		};
-		class Item72
-		{
-			dataType="Marker";
-			position[]={8901.7256,-3.1284168e-029,10194.32};
-			name="tanouka";
-			text="tanouka";
-			type="Empty";
-			id=1079;
-			atlOffset=-19.512424;
-		};
-		class Item73
-		{
-			dataType="Marker";
-			position[]={950.508,-1.4863266e-020,7681.6431};
-			name="tavu";
-			text="tavu";
-			type="Empty";
-			id=1081;
-			atlOffset=-2.3199999;
-		};
-		class Item74
-		{
-			dataType="Marker";
-			position[]={8826.5137,-1.486978e-020,3676.239};
-			name="tobakoro";
-			text="tobakoro";
-			type="Empty";
-			id=1082;
-			atlOffset=-8.5609322;
-		};
-		class Item75
-		{
-			dataType="Marker";
-			position[]={1801.111,-1.486978e-020,11985.1};
-			name="tuvanaka";
-			text="tuvanaka";
-			type="Empty";
-			id=1083;
-			atlOffset=-6.1839228;
-		};
-		class Item76
-		{
-			dataType="Marker";
-			position[]={11022.038,-2.4490488e-005,9737.8086};
-			name="vagalala";
-			text="vagalala";
-			type="Empty";
-			id=1084;
-			atlOffset=-109.8119;
-		};
-		class Item77
-		{
-			dataType="Marker";
-			position[]={14072.1,-6.6440099e-030,9934.1465};
-			name="vatukoulo";
-			text="vatukoulo";
-			type="Empty";
-			id=1085;
-			atlOffset=-98.755562;
-		};
-		class Item78
-		{
-			dataType="Marker";
-			position[]={2977.5601,-3.3296473e-016,3435.9529};
-			name="yanukka";
-			text="yanukka";
-			type="Empty";
-			id=1086;
-			atlOffset=-16.613377;
+			dataType="Layer";
+			name="Base Markers";
+			class Entities
+			{
+				items=16;
+				class Item0
+				{
+					dataType="Marker";
+					position[]={6864.2378,-2.4426923e-019,7375.2861};
+					name="aeroportdetanoa";
+					text="Aéroport de Tanoa";
+					markerType="RECTANGLE";
+					type="rectangle";
+					a=242.64;
+					b=163.938;
+					angle=223.33998;
+					id=1089;
+					atlOffset=-2.6600001;
+				};
+				class Item1
+				{
+					dataType="Marker";
+					position[]={5647.4849,-2.5253111e-019,11018.821};
+					name="aegis";
+					text="AEGIS HQ";
+					markerType="RECTANGLE";
+					type="rectangle";
+					a=89.922997;
+					b=63.073002;
+					angle=319.43796;
+					id=1103;
+					atlOffset=-2.6600001;
+				};
+				class Item2
+				{
+					dataType="Marker";
+					position[]={2136.8899,-2.6162996e-025,3417.979};
+					name="balaairstrip";
+					text="Bala Airstrip";
+					markerType="RECTANGLE";
+					type="rectangle";
+					a=124.718;
+					b=113.812;
+					angle=342.64896;
+					id=1090;
+					atlOffset=-12.942984;
+				};
+				class Item3
+				{
+					dataType="Marker";
+					position[]={3796.4041,-6.6403115e-022,13976.313};
+					name="camp";
+					text="Camp";
+					markerType="RECTANGLE";
+					type="rectangle";
+					a=104.101;
+					b=44.862999;
+					angle=56.059998;
+					id=1100;
+					atlOffset=-3.9986444;
+				};
+				class Item4
+				{
+					dataType="Marker";
+					position[]={10037.625,-6.6403115e-022,11786.416};
+					name="commsalpha";
+					text="Comms Alpha";
+					markerType="RECTANGLE";
+					type="rectangle";
+					a=116.466;
+					b=63.073002;
+					angle=0.77700001;
+					id=1093;
+					atlOffset=-409.89001;
+				};
+				class Item5
+				{
+					dataType="Marker";
+					position[]={11065.875,-3.1555255e-015,11500.6};
+					name="commsbravo";
+					text="Comms Bravo";
+					markerType="RECTANGLE";
+					type="rectangle";
+					a=136.907;
+					b=76.855003;
+					angle=0.77700001;
+					id=1094;
+					atlOffset=-350.42133;
+				};
+				class Item6
+				{
+					dataType="Marker";
+					position[]={2285.377,-6.3012841e-029,6330.501};
+					name="fueldepot";
+					text="Fuel Depot";
+					markerType="RECTANGLE";
+					type="rectangle";
+					a=47.68;
+					b=36.23;
+					angle=0.77700001;
+					id=1098;
+					atlOffset=-13.174667;
+				};
+				class Item7
+				{
+					dataType="Marker";
+					position[]={2972.376,3.3127079e-014,13080.635};
+					name="gsmstation";
+					text="GMS Station";
+					markerType="RECTANGLE";
+					type="rectangle";
+					a=47.005001;
+					b=63.073002;
+					angle=0.77700001;
+					id=1099;
+					atlOffset=-132.33197;
+				};
+				class Item8
+				{
+					dataType="Marker";
+					position[]={12453.838,-1.5030175e-021,14227.59};
+					name="hotelresort";
+					text="Hotel Resort";
+					markerType="RECTANGLE";
+					type="rectangle";
+					a=116.466;
+					b=75.245003;
+					angle=330.51996;
+					id=1097;
+					atlOffset=-56.200966;
+				};
+				class Item9
+				{
+					dataType="Marker";
+					position[]={11689.062,-8.7198196e-013,13040.928};
+					name="rochelleaerodrome";
+					text="La Rochelle Aerodrome";
+					markerType="RECTANGLE";
+					type="rectangle";
+					a=222.47501;
+					b=99.5;
+					angle=16.613998;
+					id=1096;
+					atlOffset=-9.131773;
+				};
+				class Item10
+				{
+					dataType="Marker";
+					position[]={9423.665,-2.3067117e-027,7538.4141};
+					name="lumberyard";
+					text="Lumberyard";
+					markerType="RECTANGLE";
+					type="rectangle";
+					a=84.205002;
+					b=55.327;
+					angle=89.574989;
+					id=1102;
+					atlOffset=-41.709999;
+				};
+				class Item11
+				{
+					dataType="Marker";
+					position[]={10972.644,-7.549103e-011,7905.4092};
+					name="plantation";
+					text="Plantation";
+					markerType="RECTANGLE";
+					type="rectangle";
+					a=83.158997;
+					b=88.611;
+					angle=0.77700001;
+					id=1101;
+					atlOffset=-92.278549;
+				};
+				class Item12
+				{
+					dataType="Marker";
+					position[]={11923.802,-2.4395655e-019,10276.66};
+					name="redsprings";
+					text="redsprings";
+					markerType="RECTANGLE";
+					type="rectangle";
+					a=116.466;
+					b=75.593002;
+					angle=309.104;
+					id=1095;
+					atlOffset=-146.66278;
+				};
+				class Item13
+				{
+					dataType="Marker";
+					position[]={11677.469,-6.6403115e-022,2987.666};
+					name="saintgeorgeairstrip";
+					text="Saint George Airstrip";
+					markerType="RECTANGLE";
+					type="rectangle";
+					a=108.809;
+					b=96.738998;
+					angle=35.574001;
+					id=1091;
+					atlOffset=-4.681088;
+				};
+				class Item14
+				{
+					dataType="Marker";
+					position[]={8381.7197,-6.6403115e-022,10306.565};
+					name="tanoasugarcompany";
+					text="Tanoa Sugar Company";
+					markerType="RECTANGLE";
+					type="rectangle";
+					a=217.394;
+					b=107.895;
+					angle=41.001995;
+					id=1092;
+					atlOffset=-19.43;
+				};
+				class Item15
+				{
+					dataType="Marker";
+					position[]={2175.4221,3.6644642e+029,13128.66};
+					name="tuvanakaairbase";
+					text="Tuvanaka Air Base";
+					markerType="RECTANGLE";
+					type="rectangle";
+					a=411.85599;
+					b=176.853;
+					angle=322.63196;
+					id=1088;
+					atlOffset=3.6644642e+029;
+				};
+			};
+			id=1104;
+			atlOffset=1.8322321e+029;
 		};
 	};
 	class Connections
