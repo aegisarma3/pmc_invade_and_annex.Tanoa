@@ -8,22 +8,22 @@ class EditorData
 	toggles=1537;
 	class ItemIDProvider
 	{
-		nextID=1105;
+		nextID=1117;
 	};
 	class MarkerIDProvider
 	{
-		nextID=3;
+		nextID=4;
 	};
 	class LayerIndexProvider
 	{
-		nextID=87;
+		nextID=127;
 	};
 	class Camera
 	{
-		pos[]={8656.8721,414.07935,9188.7422};
-		dir[]={-0.51015508,-0.85030204,-0.12948911};
-		up[]={-0.824157,0.52630681,-0.20919046};
-		aside[]={-0.2460261,-2.507586e-007,0.9692812};
+		pos[]={5652.0342,20.972736,11011.703};
+		dir[]={-0.27864426,-0.54320008,0.79204935};
+		up[]={-0.18027247,0.83958656,0.5124262};
+		aside[]={0.94336313,-1.968001e-007,0.33187321};
 	};
 };
 binarizationWanted=0;
@@ -43,6 +43,7 @@ addons[]=
 	"A3_Structures_F_Civ_InfoBoards",
 	"CUP_Editor_Signs_Config",
 	"A3_Structures_F_Heli_Items_Airport",
+	"A3_Structures_F_Mil_Cargo",
 	"A3_Misc_F_Helpers",
 	"A3_Structures_F_Heli_VR_Helpers",
 	"A3_Structures_F_Civ_Lamps",
@@ -698,6 +699,7 @@ class Mission
 	{
 		briefingName="AEGIS HQ";
 		resistanceWest=0;
+		resistanceEast=1;
 		timeOfChanges=1800.0002;
 		startWeather=0.30000001;
 		startWind=0.1;
@@ -879,7 +881,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=20;
+		items=21;
 		class Item0
 		{
 			dataType="Layer";
@@ -8097,7 +8099,7 @@ class Mission
 						{
 							dataType="Trigger";
 							position[]={5664.4482,2.6600001,10978.955};
-							angle=3.8800406;
+							angle=3.8800402;
 							class Attributes
 							{
 								onActivation="[gate02, 'Door_1_move'] call BIS_fnc_SingleWingSlideDoorClose;";
@@ -8115,7 +8117,7 @@ class Mission
 						{
 							dataType="Trigger";
 							position[]={5664.0811,2.6600001,10986.417};
-							angle=3.8800406;
+							angle=3.8800402;
 							class Attributes
 							{
 								onActivation="[gate01, 'Door_1_move'] call BIS_fnc_SingleWingSlideDoorClose;";
@@ -8143,7 +8145,7 @@ class Mission
 			state=1;
 			class Entities
 			{
-				items=58;
+				items=59;
 				class Item0
 				{
 					dataType="Object";
@@ -12502,9 +12504,86 @@ class Mission
 						nAttributes=1;
 					};
 				};
+				class Item58
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5608.2271,6.5293322,10999.525};
+						angles[]={0,0.81547016,0};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=1114;
+					type="Land_Medevac_HQ_V1_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="enableSimulation";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isMedicalFacility";
+							expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
 			};
 			id=208;
-			atlOffset=-0.089771271;
+			atlOffset=-0.044885635;
 		};
 		class Item2
 		{
@@ -43677,7 +43756,7 @@ class Mission
 			name="Base Markers";
 			class Entities
 			{
-				items=16;
+				items=17;
 				class Item0
 				{
 					dataType="Marker";
@@ -43686,9 +43765,12 @@ class Mission
 					text="Aéroport de Tanoa";
 					markerType="RECTANGLE";
 					type="rectangle";
+					alpha=0;
+					fillName="Border";
 					a=242.64;
 					b=163.938;
-					angle=223.33998;
+					angle=223.33992;
+					drawBorder=1;
 					id=1089;
 					atlOffset=-2.6600001;
 				};
@@ -43700,9 +43782,12 @@ class Mission
 					text="AEGIS HQ";
 					markerType="RECTANGLE";
 					type="rectangle";
+					alpha=0;
+					fillName="Border";
 					a=89.922997;
 					b=63.073002;
-					angle=319.43796;
+					angle=319.43784;
+					drawBorder=1;
 					id=1103;
 					atlOffset=-2.6600001;
 				};
@@ -43714,9 +43799,12 @@ class Mission
 					text="Bala Airstrip";
 					markerType="RECTANGLE";
 					type="rectangle";
+					alpha=0;
+					fillName="Border";
 					a=124.718;
 					b=113.812;
-					angle=342.64896;
+					angle=342.64886;
+					drawBorder=1;
 					id=1090;
 					atlOffset=-12.942984;
 				};
@@ -43728,9 +43816,12 @@ class Mission
 					text="Camp";
 					markerType="RECTANGLE";
 					type="rectangle";
+					alpha=0;
+					fillName="Border";
 					a=104.101;
 					b=44.862999;
-					angle=56.059998;
+					angle=56.059982;
+					drawBorder=1;
 					id=1100;
 					atlOffset=-3.9986444;
 				};
@@ -43742,9 +43833,12 @@ class Mission
 					text="Comms Alpha";
 					markerType="RECTANGLE";
 					type="rectangle";
+					alpha=0;
+					fillName="Border";
 					a=116.466;
 					b=63.073002;
 					angle=0.77700001;
+					drawBorder=1;
 					id=1093;
 					atlOffset=-409.89001;
 				};
@@ -43756,9 +43850,12 @@ class Mission
 					text="Comms Bravo";
 					markerType="RECTANGLE";
 					type="rectangle";
+					alpha=0;
+					fillName="Border";
 					a=136.907;
 					b=76.855003;
 					angle=0.77700001;
+					drawBorder=1;
 					id=1094;
 					atlOffset=-350.42133;
 				};
@@ -43770,9 +43867,12 @@ class Mission
 					text="Fuel Depot";
 					markerType="RECTANGLE";
 					type="rectangle";
+					alpha=0;
+					fillName="Border";
 					a=47.68;
 					b=36.23;
 					angle=0.77700001;
+					drawBorder=1;
 					id=1098;
 					atlOffset=-13.174667;
 				};
@@ -43784,9 +43884,12 @@ class Mission
 					text="GMS Station";
 					markerType="RECTANGLE";
 					type="rectangle";
+					alpha=0;
+					fillName="Border";
 					a=47.005001;
 					b=63.073002;
 					angle=0.77700001;
+					drawBorder=1;
 					id=1099;
 					atlOffset=-132.33197;
 				};
@@ -43798,9 +43901,12 @@ class Mission
 					text="Hotel Resort";
 					markerType="RECTANGLE";
 					type="rectangle";
+					alpha=0;
+					fillName="Border";
 					a=116.466;
 					b=75.245003;
-					angle=330.51996;
+					angle=330.5199;
+					drawBorder=1;
 					id=1097;
 					atlOffset=-56.200966;
 				};
@@ -43812,9 +43918,12 @@ class Mission
 					text="La Rochelle Aerodrome";
 					markerType="RECTANGLE";
 					type="rectangle";
+					alpha=0;
+					fillName="Border";
 					a=222.47501;
 					b=99.5;
-					angle=16.613998;
+					angle=16.613995;
+					drawBorder=1;
 					id=1096;
 					atlOffset=-9.131773;
 				};
@@ -43826,9 +43935,12 @@ class Mission
 					text="Lumberyard";
 					markerType="RECTANGLE";
 					type="rectangle";
+					alpha=0;
+					fillName="Border";
 					a=84.205002;
 					b=55.327;
-					angle=89.574989;
+					angle=89.574959;
+					drawBorder=1;
 					id=1102;
 					atlOffset=-41.709999;
 				};
@@ -43840,9 +43952,12 @@ class Mission
 					text="Plantation";
 					markerType="RECTANGLE";
 					type="rectangle";
+					alpha=0;
+					fillName="Border";
 					a=83.158997;
 					b=88.611;
 					angle=0.77700001;
+					drawBorder=1;
 					id=1101;
 					atlOffset=-92.278549;
 				};
@@ -43854,9 +43969,12 @@ class Mission
 					text="redsprings";
 					markerType="RECTANGLE";
 					type="rectangle";
+					alpha=0;
+					fillName="Border";
 					a=116.466;
 					b=75.593002;
 					angle=309.104;
+					drawBorder=1;
 					id=1095;
 					atlOffset=-146.66278;
 				};
@@ -43868,9 +43986,12 @@ class Mission
 					text="Saint George Airstrip";
 					markerType="RECTANGLE";
 					type="rectangle";
+					alpha=0;
+					fillName="Border";
 					a=108.809;
 					b=96.738998;
 					angle=35.574001;
+					drawBorder=1;
 					id=1091;
 					atlOffset=-4.681088;
 				};
@@ -43882,9 +44003,12 @@ class Mission
 					text="Tanoa Sugar Company";
 					markerType="RECTANGLE";
 					type="rectangle";
+					alpha=0;
+					fillName="Border";
 					a=217.394;
 					b=107.895;
-					angle=41.001995;
+					angle=41.001984;
+					drawBorder=1;
 					id=1092;
 					atlOffset=-19.43;
 				};
@@ -43896,26 +44020,72 @@ class Mission
 					text="Tuvanaka Air Base";
 					markerType="RECTANGLE";
 					type="rectangle";
+					alpha=0;
+					fillName="Border";
 					a=411.85599;
 					b=176.853;
 					angle=322.63196;
+					drawBorder=1;
 					id=1088;
 					atlOffset=3.6644642e+029;
 				};
+				class Item16
+				{
+					dataType="Marker";
+					position[]={4150.9028,-5.4609895e-014,11706.785};
+					name="emplacement01";
+					type="Empty";
+					id=1106;
+					atlOffset=-2.614707;
+				};
 			};
 			id=1104;
-			atlOffset=1.8322321e+029;
+			atlOffset=9.1611605e+028;
+		};
+		class Item20
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={5596.6611,2.6599798,10993.498};
+			};
+			id=1116;
+			type="ACE_moduleAssignMedicalFacility";
+			atlOffset=-2.0265579e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ACE_moduleAssignMedicalFacility_enabled";
+					expression="_this setVariable ['enabled',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=12;
+			nextID=13;
 		};
 		class Links
 		{
-			items=12;
+			items=13;
 			class Item0
 			{
 				linkID=0;
@@ -44031,6 +44201,16 @@ class Mission
 				linkID=11;
 				item0=1024;
 				item1=1025;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item12
+			{
+				linkID=12;
+				item0=1116;
+				item1=1114;
 				class CustomData
 				{
 					type="Sync";

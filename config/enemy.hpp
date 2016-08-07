@@ -1,55 +1,47 @@
 infantry[] =
 {
-	"O_Soldier_A_F",
-	"O_Soldier_AAR_F",
-	"O_Soldier_AAT_F",
-	"O_Soldier_AR_F",
-	"O_Soldier_AT_F",
-	"O_Soldier_F",
-	"O_Soldier_GL_F",
-	"O_Soldier_LAT_F",
-	"O_Soldier_lite_F",
-	"O_Soldier_M_F",
-	"O_Soldier_repair_F",
-	"O_Soldier_SL_F",
-	"O_Soldier_TL_F",
-	"O_spotter_F",
-	"O_sniper_F",
-	"O_medic_F",
-	"O_engineer_F",
-	"O_soldier_exp_F",
-	"O_officer_F",
-	"O_soldier_PG_F"
+	"I_C_Soldier_Para_1_F",
+	"I_C_Soldier_Para_2_F",
+	"I_C_Soldier_Para_3_F",
+	"I_C_Soldier_Para_4_F",
+	"I_C_Soldier_Para_5_F",
+	"I_C_Soldier_Para_6_F",
+	"I_C_Soldier_Para_7_F",
+	"I_C_Soldier_Para_8_F",
+	"I_C_Soldier_Bandit_1_F",
+	"I_C_Soldier_Bandit_2_F",
+	"I_C_Soldier_Bandit_3_F",
+	"I_C_Soldier_Bandit_4_F",
+	"I_C_Soldier_Bandit_5_F",
+	"I_C_Soldier_Bandit_6_F",
+	"I_C_Soldier_Bandit_7_F",
+	"I_C_Soldier_Bandit_8_F"
 };
 
 vehicles[] =
 {
-	"O_APC_Tracked_02_cannon_F",
-	"O_APC_Wheeled_02_rcws_F",
-	"O_MBT_02_cannon_F",
-	"O_APC_Tracked_02_AA_F",
-	"O_MRAP_02_gmg_F",
-	"O_MRAP_02_hmg_F"
+"I_C_Offroad_02_unarmed_F",
+"I_C_Van_01_transport_F",
+"CAF_AG_bra_r_Offroad_armed_01"
 };
 
 boats[] =
 {
-	"O_Boat_Armed_01_hmg_F"
+	"I_C_Boat_Transport_02_F"
 };
 
 air[] =
 {
-	"O_Heli_Light_02_F",
-	"O_Heli_Attack_02_black_F",
-	"O_Heli_Attack_02_F"
+	"I_C_Heli_Light_01_civil_F",
+	"I_C_Plane_Civil_01_F"
 };
 
 static[] =
 {
-	"O_HMG_01_F",
-	"O_HMG_01_A_F",
-	"O_GMG_01_F",
-	"O_GMG_01_A_F",
-	"O_static_AA_F",
-	"O_static_AT_F"
+	"I_HMG_01_F",
+	"I_HMG_01_A_F",
+	"I_GMG_01_F",
+	"I_GMG_01_A_F",
+	"I_static_AA_F",
+	"I_static_AT_F"
 };

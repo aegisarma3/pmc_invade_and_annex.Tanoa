@@ -6,7 +6,7 @@ class Header
 {
 	gameType = COOP;
 	minPlayers = 1;
-	maxPlayers = 40;
+	maxPlayers = 21;
 };
 
 class CfgRespawnTemplates
@@ -425,15 +425,17 @@ class Params
 		};
 };
 
-author = "Rarek [AW]";
-overviewText = "Invade &amp; Annex is the ever-popular co-operative game-mode allowing players to unite to overcome an increasingly-large OPFOR force. I&amp;A 3 hails in tonnes of new content in an all-new, perfectly co-operative experience. Go on; give it a go.";
-OnLoadName = "AW Invade & Annex 3";
-OnLoadMission = "Invade &amp; Annex is an ever-popular co-operative game-mode allowing players to unite to overcome an increasingly-large OPFOR force. See www.AhoyWorld.co.uk for more information.";
-loadScreen = "images\loadingScreen.jpg";
-overviewPicture = "images\loadingScreen.jpg";
+author = "Rarek [AW] - Toaster [AEGIS]";
+overviewText = "Após montar uma filial em Saint Julian e aceitar alguns contratos de segurança, AEGIS agora precisa lidar com a crescente presença da organização Syndikat.";
+OnLoadName = "PMC Invade & Annex";
+OnLoadMission = "Após montar uma filial em Saint Julian e aceitar alguns contratos de segurança, AEGIS agora precisa lidar com a crescente presença da organização Syndikat.";
+loadScreen = "images\aegis_billboard.jpg";
+overviewPicture = "images\aegis_billboard.jpg";
 
 disabledAI = 0;
 #include "VAS\menu.hpp"
+
+#include "aegis_ace_settings.hpp"
 
 class CfgFunctions
 {
