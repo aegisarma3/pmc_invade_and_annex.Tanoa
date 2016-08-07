@@ -1,3 +1,14 @@
+#include "aegis_ace_settings.hpp"
+
+author = "Rarek [AW] - Toaster [AEGIS]";
+overviewText = "Após montar uma filial em Saint Julian e aceitar alguns contratos de segurança, AEGIS agora precisa lidar com a crescente presença da organização Syndikat.";
+OnLoadName = "PMC Invade & Annex";
+OnLoadMission = "Após montar uma filial em Saint Julian e aceitar alguns contratos de segurança, AEGIS agora precisa lidar com a crescente presença da organização Syndikat.";
+loadScreen = "images\aegis_billboard.jpg";
+overviewPicture = "images\aegis_billboard.jpg";
+
+disabledAI = 1;
+
 enableDebugConsole = 1;
 allowFunctionsLog = 1;
 joinUnassigned = 0;
@@ -53,7 +64,7 @@ class Params
 			title = "Who is allowed to fly?";
 			values[] = {0, 1, 2, 3};
 			texts[] = {"Everyone", "Pilots", "Administrators", "Pilots & Administrators"};
-			default = 1;
+			default = 0;
 		};
 
 		class bodyLimit
@@ -69,7 +80,7 @@ class Params
 			title = "Should we restrict weaponry to their relevant classes?";
 			values[] = {0, 1};
 			texts[] = {"No", "Yes"};
-			default = 1;
+			default = 0;
 		};
 
 	class gap1
@@ -157,7 +168,7 @@ class Params
 			title = "Should Sub-Objectives be unique?";
 			values[] = {0, 1};
 			texts[] = {"No", "Yes"};
-			default = 0;
+			default = 1;
 		};
 
 		class main_minSubObjectivesToSpawn
@@ -181,7 +192,7 @@ class Params
 			title = "How large an area should Sub-Objectives cover?";
 			values[] = {50, 100, 150, 200, 250, 300, 350, 400, 450, 500};
 			texts[] = {"50m", "100m", "200m", "250m", "300m", "350m", "400m", "450m", "500m"};
-			default = 50;
+			default = 200;
 		};
 
 	class gap5
@@ -213,7 +224,7 @@ class Params
 			title = "Enable Tactical Missions?";
 			values[] = {0, 1};
 			texts[] = {"No", "Yes"};
-			default = 1;
+			default = 0;
 		};
 
 		class tacticalNumber
@@ -285,7 +296,7 @@ class Params
 			title = "Enable Priority Targets?";
 			values[] = {0, 1};
 			texts[] = {"No", "Yes"};
-			default = 1;
+			default = 0;
 		};
 
 		class priorityNumber
@@ -381,7 +392,7 @@ class Params
 			title = "Enable Ghost Missions?";
 			values[] = {0, 1};
 			texts[] = {"No", "Yes"};
-			default = 1;
+			default = 0;
 		};
 
 		class ghostNumber
@@ -425,17 +436,10 @@ class Params
 		};
 };
 
-author = "Rarek [AW] - Toaster [AEGIS]";
-overviewText = "Após montar uma filial em Saint Julian e aceitar alguns contratos de segurança, AEGIS agora precisa lidar com a crescente presença da organização Syndikat.";
-OnLoadName = "PMC Invade & Annex";
-OnLoadMission = "Após montar uma filial em Saint Julian e aceitar alguns contratos de segurança, AEGIS agora precisa lidar com a crescente presença da organização Syndikat.";
-loadScreen = "images\aegis_billboard.jpg";
-overviewPicture = "images\aegis_billboard.jpg";
 
-disabledAI = 0;
 #include "VAS\menu.hpp"
 
-#include "aegis_ace_settings.hpp"
+
 
 class CfgFunctions
 {
