@@ -83,7 +83,7 @@ pointsOfInterest = [];
 
 	/*
 
-\*******************************************************************/ 
+\*******************************************************************/
 
 
 /*******************************************************************\
@@ -151,6 +151,10 @@ pointsOfInterest = [];
 	MISSIONS FINISH
 
 \*******************************************************************/
+
+
+//[AiCacheDistance(players),TargetFPS(-1 for Auto),Debug,CarCacheDistance,AirCacheDistance,BoatCacheDistance]execvm "zbe_cache\main.sqf";
+[1000,-1,false,100,1000,1000]execvm "zbe_cache\main.sqf";
 
 serverInitComplete = true;
 publicVariable "serverInitComplete";

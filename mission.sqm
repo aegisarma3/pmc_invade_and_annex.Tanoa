@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=127;
+		nextID=147;
 	};
 	class Camera
 	{
 		pos[]={5615.4453,9.4670649,11032.942};
-		dir[]={-0.70615631,-0.49730909,0.50406623};
-		up[]={-0.40477952,0.86755425,0.28893799};
-		aside[]={0.58101124,-4.2648753e-007,0.81394446};
+		dir[]={0.78920811,-0.061113492,-0.61112547};
+		up[]={0.048349384,0.99811924,-0.037439093};
+		aside[]={-0.6122793,-1.7780694e-006,-0.79069287};
 	};
 };
 binarizationWanted=0;
@@ -43775,7 +43775,7 @@ class Mission
 					fillName="Border";
 					a=242.64;
 					b=163.938;
-					angle=223.33992;
+					angle=223.33989;
 					drawBorder=1;
 					id=1089;
 					atlOffset=-2.6600001;
@@ -43826,7 +43826,7 @@ class Mission
 					fillName="Border";
 					a=104.101;
 					b=44.862999;
-					angle=56.059982;
+					angle=56.059978;
 					drawBorder=1;
 					id=1100;
 					atlOffset=-3.9986444;
@@ -43945,7 +43945,7 @@ class Mission
 					fillName="Border";
 					a=84.205002;
 					b=55.327;
-					angle=89.574959;
+					angle=89.574951;
 					drawBorder=1;
 					id=1102;
 					atlOffset=-41.709999;
