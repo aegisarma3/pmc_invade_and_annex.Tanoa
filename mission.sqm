@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=287;
+		nextID=367;
 	};
 	class Camera
 	{
-		pos[]={5599.0898,21.663759,11014.813};
-		dir[]={0.80065989,-0.26558915,-0.53710294};
-		up[]={0.22058672,0.96406454,-0.14797497};
-		aside[]={-0.5571205,-9.4342977e-007,-0.83049637};
+		pos[]={5646.9287,21.663759,11031.232};
+		dir[]={0.28197524,-0.7257821,0.62755251};
+		up[]={0.29746142,0.6879108,0.66201943};
+		aside[]={0.91220903,1.1460506e-006,-0.40988183};
 	};
 };
 binarizationWanted=0;
@@ -39882,7 +39882,6 @@ class Mission
 					{
 						rank="SERGEANT";
 						description="Operador (Líder)";
-						isPlayer=1;
 						isPlayable=1;
 						class Inventory
 						{
@@ -42949,6 +42948,7 @@ class Mission
 					{
 						name="zeus";
 						description="Zeus";
+						isPlayer=1;
 						isPlayable=1;
 					};
 					id=1024;

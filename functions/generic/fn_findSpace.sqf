@@ -49,10 +49,11 @@ private ["_this", "_area", "_gradient", "_radius"];
 
 _area = [_this,0,"land",[""]] call BIS_fnc_param;
 
+
 _gradient = [_this,1,2000,[true]] call BIS_fnc_param;
 if (typeName _gradient == "BOOL" && _gradient) then { _gradient = 0.3; };
 
-_radius = [_this,2,1,[objNull,[]]] call BIS_fnc_param;
+_radius = [_this,2,1, [[],0,objNull]] call BIS_fnc_param;
 if (typeName _radius == "OBJECT") then { _radius = getPos _radius; };
 
 _pos = [];
@@ -73,7 +74,9 @@ while {!_validPos} do
 		{
 			_mainPos = [];
 			{ if (["main_", _x] call BIS_fnc_inString) exitWith { _mainPos = markerPos _x; }; } forEach allMapMarkers;
-			_pos = [_mainPos, 0, 500, _radius, 0, _gradient, 0] call BIS_fnc_findSafePos;
+			//_pos = [_mainPos, 0, 500, _radius, 0, _gradient, 0] call BIS_fnc_findSafePos;
+			//_pos = [_mainPos,[0, 200]] call Zen_FindGroundPosition;
+			_pos = [_mainPos,[0, 600],[],1,[3,250],[0,360],[1,1,15]] call Zen_FindGroundPosition;
 		};
 		case "poi":	{ _pos = markerPos (pointsOfInterest call BIS_fnc_selectRandom); };
 		default {};
