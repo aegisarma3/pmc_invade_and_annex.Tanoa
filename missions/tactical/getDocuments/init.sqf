@@ -8,7 +8,7 @@ _code = _this select 1;
 	All values are required
 */
 
-_title		=	"Get Documents";
+_title		=	"Coletar recibos";
 _pos		=	["land", true, 15] call AW_fnc_findSpace;
 
 /*

@@ -1,5 +1,5 @@
 #include "Zen_FrameworkFunctions\Zen_InitHeader.sqf"
-
+Zen_Print_All_Errors = false;
 /***********************************************************\
 	LEAVE THESE BE AND THE REST OF THE FILE IS YOURS!
 

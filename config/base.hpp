@@ -238,19 +238,19 @@ class tanoasugarcompany
 	vehicles[] = {};
 };
 
-// class tuvanakaairbase
-// {
-// 	name = "Tuvanaka Airbase";
-// 	isOwned = 0;
-// 	groups = 1;
-// 	respawnGroups = 1;
-// 	respawnTime = 300;
-// 	// vehicles[] =
-// 	// {
-// 	// 	{"B_Truck_01_transport_F", "base_camp_respawn_1"},
-// 	// 	{"B_Truck_01_transport_F", "base_camp_respawn_2"},
-// 	// 	{"B_Truck_01_transport_F", "base_camp_respawn_3"}
-// 	// };
-// 	vehicles[] = {};
-// };
+class tuvanakaairbase
+{
+	name = "Tuvanaka Airbase";
+	isOwned = 0;
+	groups = 1;
+	respawnGroups = 1;
+	respawnTime = 300;
+	// vehicles[] =
+	// {
+	// 	{"B_Truck_01_transport_F", "base_camp_respawn_1"},
+	// 	{"B_Truck_01_transport_F", "base_camp_respawn_2"},
+	// 	{"B_Truck_01_transport_F", "base_camp_respawn_3"}
+	// };
+	vehicles[] = {};
+};
 

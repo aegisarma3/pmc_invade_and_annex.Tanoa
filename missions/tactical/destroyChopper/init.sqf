@@ -7,7 +7,7 @@ _subfolder = _this;
 	All values are required
 */
 
-_title		=	"Destroy Chopper";
+_title		=	"Destruir Helicóptero";
 _pos		=	["land", true, 5] call AW_fnc_findSpace;
 
 /*

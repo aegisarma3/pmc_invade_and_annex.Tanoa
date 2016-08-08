@@ -2,7 +2,7 @@ class sub_created
 {
 	title = "Oportunidade - %1";
 	iconPicture = "images\notificons\tactical_mission.paa";
-	description = "New sub-objective: %1";
+	description = "Novo objetivo: %1";
 	duration = 10;
 };
 

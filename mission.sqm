@@ -8,7 +8,7 @@ class EditorData
 	toggles=1537;
 	class ItemIDProvider
 	{
-		nextID=1120;
+		nextID=1124;
 	};
 	class MarkerIDProvider
 	{
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=367;
+		nextID=447;
 	};
 	class Camera
 	{
@@ -881,7 +881,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=23;
+		items=24;
 		class Item0
 		{
 			dataType="Layer";
@@ -39882,6 +39882,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						description="Operador (Líder)";
+						isPlayer=1;
 						isPlayable=1;
 						class Inventory
 						{
@@ -42948,7 +42949,6 @@ class Mission
 					{
 						name="zeus";
 						description="Zeus";
-						isPlayer=1;
 						isPlayable=1;
 					};
 					id=1024;
@@ -44031,7 +44031,7 @@ class Mission
 				};
 			};
 			id=1104;
-			atlOffset=9.1611605e+028;
+			atlOffset=1.8322321e+029;
 		};
 		class Item20
 		{
@@ -44224,20 +44224,129 @@ class Mission
 			alpha=0;
 			a=49.347;
 			b=145.263;
-			angle=331.49597;
+			angle=331.49585;
 			id=1119;
 			atlOffset=-2.55;
+		};
+		class Item23
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={5662.4531,2.6600001,11050.509};
+			};
+			id=1123;
+			type="ModuleCurator_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=2;
+						};
+					};
+				};
+				nAttributes=5;
+			};
 		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=13;
+			nextID=14;
 		};
 		class Links
 		{
-			items=13;
+			items=14;
 			class Item0
 			{
 				linkID=0;
@@ -44363,6 +44472,16 @@ class Mission
 				linkID=12;
 				item0=1116;
 				item1=1114;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item13
+			{
+				linkID=13;
+				item0=1123;
+				item1=998;
 				class CustomData
 				{
 					type="Sync";
