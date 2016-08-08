@@ -1,6 +1,6 @@
 class sub_created
 {
-	title = "Sub-Objective - %1";
+	title = "Oportunidade - %1";
 	iconPicture = "images\notificons\tactical_mission.paa";
 	description = "New sub-objective: %1";
 	duration = 10;
@@ -8,7 +8,7 @@ class sub_created
 
 class sub_updated
 {
-	title = "Sub-Objective Update";
+	title = "Oportunidade - Update";
 	iconPicture = "images\notificons\tactical_mission.paa";
 	description = "%1";
 	duration = 10;
@@ -16,16 +16,16 @@ class sub_updated
 
 class sub_completed
 {
-	title = "Sub-Objective - %1";
+	title = "Oportunidade - %1";
 	iconPicture = "images\notificons\tactical_mission_completed.paa";
-	description = "SUCCESS! %2";
+	description = "SUCESSO! %2";
 	duration = 10;
 };
 
 class sub_failed
 {
-	title = "Sub-Objective - %1";
+	title = "Oportunidade - %1";
 	iconPicture = "images\notificons\tactical_mission.paa";
-	description = "FAILED! %2";
+	description = "FALHOU! %2";
 	duration = 10;
 };

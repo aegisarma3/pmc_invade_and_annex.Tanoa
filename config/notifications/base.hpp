@@ -1,6 +1,6 @@
 class base_captured
 {
-	title = "Base - %1";
+	title = "Contrato - %1";
 	iconPicture = "";
 	description = "We've captured %1! Fantastic job!";
 	duration = 10;
@@ -8,32 +8,32 @@ class base_captured
 
 class base_lost
 {
-	title = "Base - %1";
+	title = "Contrato - %1";
 	iconPicture = "";
-	description = "We've lost %1 to OPFOR forces";
+	description = "%1 foi tomada por membros do Syndikat.";
 	duration = 10;
 };
 
 class base_underattack
 {
-	title = "Base - %1";
+	title = "Contrato - %1";
 	iconPicture = "";
-	description = "%1 is under attack! Defend the base!";
+	description = "%1 está sobre ataque! Defenda o local.";
 	duration = 10;
 };
 
 class base_attacking
 {
-	title = "Base - %1";
+	title = "Contrato - %1";
 	iconPicture = "";
-	description = "We're attacking %1! Help take the base!";
+	description = "Atenção todas unidades. Estamos atacando %1.";
 	duration = 10;
 };
 
 class base_defended
 {
-	title = "Base - %1";
+	title = "Contrato - %1";
 	iconPicture = "";
-	description = "We've successfully defended %1! Hoo-rah!";
+	description = "%1 foi defendida com sucesso! Hoo-rah!";
 	duration = 10;
 };

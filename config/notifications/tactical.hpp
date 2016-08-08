@@ -1,14 +1,14 @@
 class tactical_created
 {
-	title = "Tactical - %1";
+	title = "Inteligência - %1";
 	iconPicture = "images\notificons\tactical_mission.paa";
-	description = "New objective: %1";
+	description = "Novo objetivo: %1";
 	duration = 10;
 };
 
 class tactical_updated
 {
-	title = "Tactical Mission Update";
+	title = "Inteligência - Update";
 	iconPicture = "images\notificons\tactical_mission.paa";
 	description = "%1";
 	duration = 10;
@@ -16,16 +16,16 @@ class tactical_updated
 
 class tactical_completed
 {
-	title = "Tactical - %1";
+	title = "Inteligência - %1";
 	iconPicture = "images\notificons\tactical_mission_completed.paa";
-	description = "SUCCESS! %2";
+	description = "SUCESSO! %2";
 	duration = 10;
 };
 
 class tactical_failed
 {
-	title = "Tactical - %1";
+	title = "Inteligência - %1";
 	iconPicture = "images\notificons\tactical_mission.paa";
-	description = "FAILED! %2";
+	description = "FALHOU! %2";
 	duration = 10;
 };
